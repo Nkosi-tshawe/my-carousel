@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="carousel">
+    <div class="carousel-content">
+      <div *ngFor="let i of [1, 2, 3, 4, 5]" class="slide">
+        <picture class="lc__slide-img"> </picture>
+        <div class="lc__slide-title">
+          <h3>Title</h3>
+        </div>
+        <a class="lc__slide-link">Start here</a>
+      </div>
+    </div>
+  </div>
+  <div class="nav-wrapper">
+    <a (click)="moveRight()" class="nav nav-left"></a>
+    <a (click)="moveLeft()" class="nav nav-right"></a>
+  </div>
+</div>
